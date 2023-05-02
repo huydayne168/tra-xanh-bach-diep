@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- link Reset CSS -->
+        <link rel="stylesheet" href="./css/reset.css" />
+        <!-- link font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- link Utilities CSS -->
+        <link rel="stylesheet" href="./css/utilities.css" />
+        <!-- link Trang Chủ CSS -->
+        <link rel="stylesheet" href="./css/sanpham.css" />
+        <title>Trà Sen Bách Diệp</title>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="container content">
+                <a href="index.html">
+                    <img
+                        src="./asset/Pictures/trang-chu/logophongtra.png"
+                        alt="Trà Bách Diệp logo"
+                        class="logo"
+                    />
+                </a>
+
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới Thiệu</a></li>
+                    <li><a href="sanpham.html">sản phẩm</a></li>
+                    <li><a href="tintuc.html">tin tức</a></li>
+                    <li><a href="lienhe.html">liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1 class="title">sản phẩm</h1>
+            <!-- background -->
+            <img
+                src="./asset/Pictures/san-pham/banner.png"
+                alt="..."
+                class="background"
+            />
+        </section>
+        <!-- Main Content -->
+        <main id="main-content">
+            <div class="container content">
+                <div class="header">
+                    <div class="flow-page">Trang chủ > Sản phẩm</div>
+                    <h2 class="title">Sản phẩm</h2>
+                </div>
+
+                <div class="body">
+                    <!-- side bar -->
+                    <div class="side-bar">
+                        <p>Bộ lọc sản phẩm</p>
+                        <div class="filter-wrapper">
+                            <!-- type -->
+                            <div class="type">
+                                <h3>Loại sản phẩm</h3>
+                                <ul>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="tra xanh thai nguyen"
+                                            id="thai-nguyen"
+                                        />
+                                        <label for="thai-nguyen"
+                                            >Trà xanh Thái Nguyên</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="tra xanh o long"
+                                            id="o-long"
+                                        />
+                                        <label for="o-long">Trà Ô Long</label>
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="tra shan tuyet"
+                                            id="shan-tuyet"
+                                        />
+                                        <label for="shan-tuyet"
+                                            >Trà Shan tuyết</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="tra sen"
+                                            id="sen"
+                                        />
+                                        <label for="sen">Trà Sen</label>
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="tra lai"
+                                            id="lai"
+                                        />
+                                        <label for="lai">Trà Lài</label>
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="tra thao duoc"
+                                            id="thao-duoc"
+                                        />
+                                        <label for="thao-duoc"
+                                            >Trà thảo dược</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="dung cu pha tra"
+                                            id="dung-cu-pha-tra"
+                                        />
+                                        <label for="dung-cu-pha-tra"
+                                            >Dụng cụ pha trà</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="nuoc pha tra"
+                                            id="nuoc-pha-tra"
+                                        />
+                                        <label for="nuoc-pha-tra"
+                                            >Nước pha trà</label
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- price -->
+                            <div class="price">
+                                <h3>Giá thành</h3>
+                                <input
+                                    type="range"
+                                    name="price-range"
+                                    id="price-range"
+                                />
+                                <p>Từ 50.000 đến 200.000</p>
+                            </div>
+                            <!-- brand -->
+                            <div class="brand">
+                                <h3>Thương hiệu</h3>
+                                <ul>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="tan cuong xanh"
+                                            id="tan-cuong-xanh"
+                                        />
+                                        <label for="tan-cuong-xanh"
+                                            >Trà Tân Cương Xanh</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="sen tay ho"
+                                            id="sen-tay-ho"
+                                        />
+                                        <label for="sen-tay-ho"
+                                            >Trà Sen Tây Hồ</label
+                                        >
+                                    </li>
+                                    <li>
+                                        <input
+                                            type="checkbox"
+                                            name="loc tan"
+                                            id="loc-tan"
+                                        />
+                                        <label for="loc-tan">Trà Lộc Tân</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- products -->
+                    <div class="products-wrapper">
+                        <div class="filter-ordered-price">
+                            <select name="order-price" id="order-price">
+                                <option value="default">
+                                    Sắp xếp mặc định
+                                </option>
+                                <option value="low-to-high">
+                                    Giá thấp đến cao
+                                </option>
+                                <option value="high-to-low">
+                                    Giá cao đến thấp
+                                </option>
+                                <option value="high-rate">
+                                    Xếp theo đánh giá
+                                </option>
+                                <option value="popular">
+                                    Xếp theo phổ biến
+                                </option>
+                            </select>
+                        </div>
+
+                        <!-- choose page -->
+                        <div class="choose-page">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                                class="btn-prev btn"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <div class="pages-list">
+                                <div class="page highlight">1</div>
+                                <div class="page">2</div>
+                                <div class="page">3</div>
+                                <div class="page">4</div>
+                                <div class="page-more">...</div>
+                            </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="btn-next btn"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                                />
+                            </svg>
+                        </div>
+                        <div class="products-list">
+                            <!-- Render Products Item here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container sm-content">
+                <div class="address">
+                    <img
+                        src="./asset/Pictures/trang-chu/logophongtra.png"
+                        alt="logo"
+                        class="logo"
+                    />
+                    <ul>
+                        <li>7999-9999-9999</li>
+                        <li>trasenbachdiep@gmail.com</li>
+                        <li>Số 12, Quảng An, Hồ Tây, Hà Nội</li>
+                    </ul>
+                </div>
+                <div class="about-us">
+                    <h4>Về chúng tôi</h4>
+                    <ul>
+                        <li><a href="#!">Giới thiệu</a></li>
+                        <li><a href="#!">Sản phẩm</a></li>
+                        <li><a href="#!">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h4>Liên hệ</h4>
+                    <ul>
+                        <li>
+                            <ul class="social-media">
+                                <li>
+                                    <a href="#">
+                                        <i
+                                            class="fa-brands fa-square-youtube"
+                                        ></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i
+                                            class="fa-brands fa-square-instagram"
+                                        ></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i
+                                            class="fa-brands fa-square-facebook"
+                                        ></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Copyright &copy; 2010-2020</li>
+                        <li>Tra Sen Bach Diep. All rights reserved</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- background -->
+            <img
+                src="./asset/Pictures/trang-chu/fotter-tea.png"
+                alt="tea"
+                class="footer-image"
+            />
+        </footer>
+
+        <script src="./js/sanpham.js"></script>
+    </body>
+</html>

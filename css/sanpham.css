@@ -1,0 +1,208 @@
+:root {
+    --primary-color: #aabc44;
+    --light-text-color: #eee;
+    --black-text-color: #444;
+}
+
+/* ==== Hero CSS ==== */
+.hero {
+    margin-top: 66.4px;
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .title {
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+/* ==== Main Content ==== */
+
+#main-content .flow-page {
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    opacity: 0.8;
+    color: var(--primary-color);
+}
+
+#main-content .title {
+    text-align: start;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--black-text-color);
+}
+
+#main-content .body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ==== Side Bar CSS ==== */
+.side-bar {
+    width: 16%;
+}
+
+.side-bar > p {
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    opacity: 0.8;
+}
+
+.filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.filter-wrapper h3 {
+    font-size: 2rem;
+    margin-bottom: 32px;
+}
+
+.filter-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* == Filter Price CSS == */
+/* Customize input range */
+input[type="range"] {
+    position: relative;
+    margin-bottom: 16px;
+    padding-left: 10px;
+    -webkit-appearance: none !important;
+    background: var(--black-text-color);
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: var(--black-text-color);
+    height: 10px;
+    width: 10px;
+    border: 1px solid #000;
+}
+
+input[type="range"]::before {
+    position: absolute;
+    top: -3px;
+    content: "";
+    display: block;
+    background: var(--black-text-color);
+    height: 10px;
+    width: 10px;
+    border: 1px solid #000;
+}
+
+/* === Products CSS === */
+.products-wrapper {
+    position: relative;
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.products-wrapper .products-list {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    row-gap: 32px;
+}
+
+.products-wrapper .items {
+    padding: 24px;
+    text-align: center;
+}
+
+.products-wrapper .items:hover {
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.02);
+}
+
+.products-wrapper .items .top {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-wrapper .items .top .rate i {
+    color: var(--primary-color);
+}
+
+.products-wrapper .items .top .new {
+    padding: 4px;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+}
+
+.products-wrapper .items img {
+    width: 200px;
+    margin-bottom: 16px;
+}
+
+.products-wrapper .items .products-name {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.products-wrapper .items .price-amount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.products-wrapper .items .price-amount .products-price::after {
+    content: "VNĐ";
+    font-size: 1.2rem;
+}
+
+.products-wrapper .items .price-amount select {
+    padding: 8px;
+    font-size: 1.6rem;
+}
+
+.filter-ordered-price {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    height: 20px;
+}
+
+.filter-ordered-price select#order-price {
+    padding: 6px;
+    font-size: 1.8rem;
+    color: var(--black-text-color);
+}
+
+.choose-page {
+    position: absolute;
+    bottom: -90px;
+    height: auto;
+}
+
+.no-result {
+    grid-column: 2 / 3;
+    align-self: center;
+    justify-self: center;
+    padding: 32px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+}
+
+/* ==== Footer CSS ==== */
+#footer {
+    margin-top: 50px;
+}
